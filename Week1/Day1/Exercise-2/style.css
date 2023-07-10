@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aliceblue;
+    padding: 10px 25px;
+}
+
+nav button {
+    background-color: blue;
+    color: aliceblue;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#welcome {
+    background-image: url('sea.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#welcome h1 {
+    font-size: 3rem;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+#welcome input {
+    border: none;
+    padding: 10px;
+}
+
+#email {
+    width: 20rem;
+}
+
+#submit {
+    background-color: blue;
+    color: aliceblue;
+}
+
+#specs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    min-height: 400px;
+}
+
+.subspecs {
+    width: 30%;
+    text-align: center;
+}
+
+.subspecs p {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+i {
+    width: 150px;
+    height: 150px;
+}
