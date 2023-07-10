@@ -1,0 +1,40 @@
+#subtitle {
+    text-indent: 25px;
+}
+
+ul {
+    margin-left: 40px;
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+img {
+    border: 10px solid red;
+    width: 500px;
+    height: 250px;
+}
+
+.redborder {
+    color: red;
+    border: 2px solid red;
+    text-align: center;
+    width: 80vw;
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+table {
+    margin-bottom: 15px;
+}
