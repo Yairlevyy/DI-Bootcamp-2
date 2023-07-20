@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portofolio</title>
+    <style>
+        .custom-bg-img {
+            background-image: url('img.jpeg');
+            background-size: cover; /* Adjust as needed: cover, contain, etc. */
+            background-repeat: no-repeat;
+            background-position: center center;
+            min-height: 400px; 
+        }
+        .container-min-h {
+            min-height: 350px;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+
+    <nav class="navbar bg-primary text-light navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="#">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav" style="margin-left: auto;">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Portofolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid custom-bg-img d-flex flex-column justify-content-center align-items-center">
+        <div class="w-75">
+        <h1 class="text-primary">Hello, Welcome To My official Website</h1>
+        <p class="text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, a! Laudantium fugit iusto est accusantium beatae nobis harum ad velit!</p>
+        <button type="button" class="btn btn-primary">See more</button>
+        </div>
+    </div>
+    <div class="container-fluid bg-light container-min-h d-flex flex-column justify-content-center align-items-center" id="about">
+        <h1 class="text-primary mt-2 mb-2" style="padding: 25px;">About Me</h1>
+        <div class="container" style="padding: 25px 50px;">
+            <div class="row">
+                <div class="col-4" style="border-right: 2px solid black;">
+                    <img src="profile.jpg" alt="Round Image" class="img-fluid rounded-circle">
+                    <p class="text-center mt-2">S.Web Developer</p>
+                </div>
+                <div class="col-8 ml-3">
+                    <h3 class="text-primary mt-3">D. John</h3>
+                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quisquam consequuntur nisi nulla vitae ex inventore, quaerat dolorem recusandae consectetur facilis molestiae, quod sed nihil impedit sit atque quibusdam voluptatem dolor doloremque quasi sequi dolores! Itaque, quidem? Corrupti obcaecati qui odio cumque velit rem, praesentium impedit earum ut doloremque! Animi delectus porro et? Vitae repudiandae accusamus ipsa dolorum, sequi culpa.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+</html>
