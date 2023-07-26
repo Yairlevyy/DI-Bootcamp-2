@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        // Exercise 1
+
+        let language = prompt('Wich language are you speak ?').toLowerCase();
+
+        if (language == "french"){
+            alert('Bonjour');
+        } else if (language == "english") {
+            alert('Hello');
+        } else if (language == "hebrew") {
+            alert('Shalom');
+        } else {
+            alert('01110011 01101111 01110010 01110010 01111001');
+        };
+
+        // Exercise 2
+
+        let grade = prompt('Please enter your grade!');
+
+        if (grade > 90 ) {
+            alert('A')
+        } else if (80<grade && grade<=90) {
+            alert('B')
+        } else if (70<=grade && grade<=80) {
+            alert('C')
+        } else {
+            alert('D')
+        };
+
+        // Exercise 3
+
+        let str = prompt('Please enter a verb!');
+        let length = str.length;
+        let end = str.substring(length - 3,length);
+        // console.log(end)
+
+        if (length >= 3 && end == "ing") {
+            console.log(str+"ly")
+        } else if (length >= 3 && end != "ing") {
+            console.log(str + "ing")
+        } else {
+            console.log(str);
+        }
+
+        
+
+    </script> 
+</body>
+</html>
