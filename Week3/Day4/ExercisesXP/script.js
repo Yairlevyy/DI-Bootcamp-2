@@ -41,7 +41,7 @@ if (users_online == 0) {
     console.log('no one is online');
 } else if (users_online == 1) {
     console.log(`${users[0]} is online`);
-} else if (users_online == 1) {
+} else if (users_online == 2) {
     console.log(`${users[0]} and ${users[1]} are online`);
 } else {
     console.log(`${users[0]}, ${users[1]} and ${users.length-2} more are online`);
