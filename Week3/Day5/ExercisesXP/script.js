@@ -66,7 +66,7 @@ let danRent = building["numberOfRoomsAndRent"]["dan"][1];
 let davidRent = building["numberOfRoomsAndRent"]["david"][1];
 
 if (sarahRent + davidRent > danRent) {
-    danRent = 1200;
+    building["numberOfRoomsAndRent"]["dan"][1] = 1200;
 }
 
 // Exercise 5
