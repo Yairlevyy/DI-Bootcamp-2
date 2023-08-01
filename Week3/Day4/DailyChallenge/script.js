@@ -4,8 +4,8 @@ let wordBad = sentence.indexOf("bad");
 
 console.log(wordNot, wordBad);
 
-if (wordBad > wordNot) {
-    console.log(sentence.replace(sentence.substring(wordNot, wordBad + 3), "good"))
+if (wordNot !== -1 && wordBad !== -1 && wordBad > wordNot) {
+    console.log(sentence.replace(sentence.substring(wordNot, wordBad + 3), "good"));
 } else {
-    console.log(sentence)
-}
+    console.log(sentence);
+};
