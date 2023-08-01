@@ -16,10 +16,9 @@ function playTheGame() {
             alert('Sorry it’s not a good number, Goodbye');
         } else {
             computerNumber = Math.round(Math.random() * 10);
+            compareNumbers(num,computerNumber);
         }
     }
-
-    compareNumbers(num,computerNumber)
 };
 
 function compareNumbers(userNumber,computerNumber) {
