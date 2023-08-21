@@ -82,12 +82,12 @@
 // If the first variable will be a const will not make any changes since we are definig again the a variable inside the scope of the function.
 
 //#5
-let a = 2;
-if (true) {
-    let a = 5;
-    alert(`in the if block ${a}`);
-}
-alert(`outside of the if block ${a}`);
+// let a = 2;
+// if (true) {
+//     let a = 5;
+//     alert(`in the if block ${a}`);
+// }
+// alert(`outside of the if block ${a}`);
 
 // #5.1 - run the code in the console
 
