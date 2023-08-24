@@ -1,0 +1,49 @@
+body, .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    background-color: aquamarine;
+    padding: 10px;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.container button {
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.container div {
+    font-size: 30px;
+    padding: 10px;
+}
+
+#quote, #quote_auth{
+    font-style: italic;
+}
+
+#author, #author_auth {
+    font-size: 25px;
+    align-self: flex-end;
+    font-weight: bold;
+}
+
+.container_bis input, .container_number input, .container_search input {
+    border: none;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.container_number button {
+    font-size: 15px;
+};
+
