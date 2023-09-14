@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div>
+    <h1>Star Wars</h1>
+    <div id="data">
+        <h3 id="name"></h3>
+        <p>Height : <span id="height"></span></p>
+        <p>Gender : <span id="gender"></span></p>
+        <p>Birth Year : <span id="birth_year"></span></p>
+        <p>Home World : <span id="homeworld"></span></p>
+    </div>
+    <div id="error" style="display: none;padding: 100px;">
+        <h3>Oh No! That person isn"t available</h3>
+    </div>
+    <div id="loading" style="display: none;padding: 100px;">
+        <i class="fa-solid fa-spinner fa-spin fa-2xl" style="color: #ffffff;"></i>
+    </div>
+    <button id="btn">Find Someone</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
