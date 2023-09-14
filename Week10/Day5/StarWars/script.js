@@ -1,35 +1,3 @@
-// // get a random number between 1 and 83
-
-// const randomNumber = Math.floor(Math.random() * 83) + 1;
-
-// // Function to fetch the data
-
-// fetch('https://www.swapi.tech/api/people/1')
-// .then(res=>{
-//     return res.json()
-// })
-// .then(data=>{
-//     const res = data.result.properties;
-//     // name res.name
-//     // height res.height
-//     // gender res.gender
-//     // birth year res.birth_year
-//     // home world res.homeworld (fetch the data)
-//     console.log(res)
-// })
-// .catch(e=>{
-//     console.log('Oh No! That person isn"t available')
-// });
-
-// //homeworld
-
-// fetch("https://www.swapi.tech/api/planets/1")
-// .then(res=>res.json())
-// .then(data=>console.log(data.result.properties.name))
-
-// ************************************************************
-
-
 let btn = document.getElementById('btn');
 btn.addEventListener('click',function(){
     displayDivLoading();
