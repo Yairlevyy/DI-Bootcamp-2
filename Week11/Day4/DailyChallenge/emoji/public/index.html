@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Game</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" style="border: 2px solid black;padding: 10px;">
+            <h3>Actual score : <span id="actual_score">0</span></h3>
+            <h3>Best score : <span id="best_score">0</span></h3>
+            <input type="radio" name="choice" value="Smile" >Smile : 😀<br>
+            <input type="radio" name="choice" value="Dog">Dog : 🐶<br>
+            <input type="radio" name="choice" value="Taco">Taco : 🌮<br>
+            <input type="radio" name="choice" value="Flower">Flower : 🌸<br>
+            <input type="radio" name="choice" value="Rocket">Rocket : 🚀<br>
+            <input type="radio" name="choice" value="Cake">Cake : 🎂<br>
+            <h4 id="server_msg"></h4>
+            <button id="submit_btn">Submit my choice</button>
+    </form>
+<script>
+    document.getElementById('submit_btn').addEventListener('click',function(e){
+        e.preventDefault()
+        const choice = document.querySelector('input[name="choice"]:checked')
+        const actual_score = document.getElementById('actual_score')
+        const best_score = document.getElementById('best_score')
+        const data = {choice:choice.value}
+
+        fetch('/api/emoji',{
+            method:'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(res=>res.json())
+        .then(data=>{
+            console.log(data)
+            if (data === 'good'){
+                actual_score.innerHTML =  Number(actual_score.innerHTML) + 1;
+            } else {
+                if (Number(actual_score.innerHTML) > Number(best_score.innerHTML)){
+                    best_score.innerHTML = actual_score.innerHTML;
+                }
+                actual_score.innerHTML = 0;
+            }
+        })
+        .catch(e=>console.log(e));
+    })
+</script>
+</body>
+</html>
