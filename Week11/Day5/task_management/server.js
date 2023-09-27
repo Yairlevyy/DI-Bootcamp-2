@@ -43,8 +43,8 @@ app.put('/tasks/:id',(req,res)=>{
     const data = JSON.parse(dataRaw)
     const taskToUpdate = data.tasks.find(task => task.id === id);
     if (!taskToUpdate) return res.status(404).send('Task not found with the specified ID.');
-    taskToUpdate.title = title;
-    taskToUpdate.description = description;
+    if (title.length !== 0) taskToUpdate.title = title;
+    if (description.length !== 0) taskToUpdate.description = description;
     const updatedData = JSON.stringify(data, null, 2);
     fs.writeFileSync('tasks.json', updatedData, 'utf-8');
     res.send('Task updated successfully.');
@@ -59,5 +59,6 @@ app.delete('/tasks/:id',(req,res)=>{
     data.tasks.splice(taskIndex, 1);
     const updatedData = JSON.stringify(data, null, 2);
     fs.writeFileSync('tasks.json', updatedData, 'utf-8');
-    res.send('The task was succesfully deleted !')
+    res.send('The task was succesfully deleted !');
 })
+

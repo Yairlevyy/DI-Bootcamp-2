@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "first_name": "yair",
+      "last_name": "levy",
+      "email": "yairlevy@gmail.com",
+      "username": "yl5",
+      "password": "test"
+    },
+    {
+      "id": 2,
+      "first_name": "Yair",
+      "last_name": "Levy",
+      "email": "New email",
+      "username": "New username",
+      "crypted_password": "$2a$10$Armr..i1WUj499MpeBA.3OTxUPxQfUDiQmEpnknasYilraSsMhMW."
+    },
+    {
+      "id": 3,
+      "first_name": "Yair",
+      "last_name": "Levy",
+      "email": "yairlevyy55@gmail.com",
+      "username": "yair",
+      "crypted_password": "$2a$10$vNaXFtzasKdnu4EOZwXY5uFkVSdN4y/XBPcJYFSzD6qxLoK3jXiEq"
+    }
+  ]
+}
