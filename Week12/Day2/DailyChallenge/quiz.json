@@ -1,0 +1,33 @@
+{
+  "user_infos": {
+    "actual_question": 2,
+    "user_score": 1
+  },
+  "quiz_questions": [
+    {
+      "id": 1,
+      "question": "What is the capital of France?",
+      "answer": "Paris"
+    },
+    {
+      "id": 2,
+      "question": "Which planet is known as the Red Planet?",
+      "answer": "Mars"
+    },
+    {
+      "id": 3,
+      "question": "What is the largest mammal in the world?",
+      "answer": "Blue whale"
+    },
+    {
+      "id": 4,
+      "question": "How many continents are there on Earth?",
+      "answer": "7"
+    },
+    {
+      "id": 5,
+      "question": "Who wrote the play 'Romeo and Juliet'?",
+      "answer": "William Shakespeare"
+    }
+  ]
+}
