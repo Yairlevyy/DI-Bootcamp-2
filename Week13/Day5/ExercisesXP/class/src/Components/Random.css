@@ -1,0 +1,12 @@
+ .container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+ }
+
+ .sub_container {
+        background-color: white;
+        border-radius: 10px;
+        margin: 10px;
+    }
