@@ -1,0 +1,31 @@
+What is a class?
+
+A template for creating instances (objects) with similar properties and behaviors.
+
+What is an instance?
+
+Individual object created from a class. It represents a specific occurrence of the class, with its own set of attributes and values.
+
+What is encapsulation?
+
+It restricts direct access to some of an object's components and can prevent the accidental modification of data.
+
+What is abstraction?
+
+Abstraction is the concept of hiding the complex implementation details and showing only the necessary features of an object.
+
+What is inheritance?
+
+Mechanism in which a new class inherits properties and behaviors from an existing class.
+
+What is multiple inheritance?
+
+Feature in which a class can inherit attributes and methods from more than one parent class.
+
+What is polymorphism?
+
+Allows objects of different classes to be treated as objects of a common base class.
+
+What is method resolution order or MRO?
+
+MRO is the order in which base classes are searched when looking for a method in a class hierarchy.
