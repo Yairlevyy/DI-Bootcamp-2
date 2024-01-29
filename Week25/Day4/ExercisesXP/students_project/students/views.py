@@ -8,7 +8,11 @@ from .serializers import StudentSerializer
 # Create your views here.
 class StudentListView(APIView):
     def get(self,request):
-        students = Student.objects.all()
+        date_joined_param = request.query_params.get('date_joined',None)
+        if date_joined_param:
+            students = Student.objects.filter(date_joined=date_joined_param)
+        else:
+            students = Student.objects.all()
         serializer = StudentSerializer(students, many=True)
         return Response(serializer.data)
     
