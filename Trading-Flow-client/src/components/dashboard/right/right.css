@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --main-color: rgb(29, 136, 254);
+    --main-bg-color: background-color: rgb(14, 20, 37);
+}
+
+.right_container {
+    height: 100%;
+    width: 25%;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ticker_infos_container {
+    height: 90%;
+    width: 90%;
+    /* border: 2px solid white; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.profile_infos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ticker_infos_container .profile_infos img {
+    height: 80px;
+    width: 80px;
+    background-color: #fff;
+    padding: 5px;
+    margin: 15px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.ticker_infos_container .profile_infos p {
+    text-align: center;
+    /* margin: 5px; */
+}
+
+.ticker_infos_container .profile_infos .ticker_infos {
+    color: grey;
+}
+
+.ticker_infos_container .ticker_infos_sub_container {
+    max-height: 30%;
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 13px;
+    overflow: scroll;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    /* background-color: #fff; */
+}
+
+.ticker_infos_container .ticker_infos_sub_container h4 {
+    margin-bottom: 5px;
+}
+
+.ticker_infos_container .ticker_infos_sub_container a {
+    text-align: center;
+    color: white;
+    margin-left: 25px;
+} 
+
+.ticker_infos_sub_container::-webkit-scrollbar {
+    display: none;
+}

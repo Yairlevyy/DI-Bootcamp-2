@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --main-color: rgb(29, 136, 254);
+    --main-bg-color: background-color: rgb(14, 20, 37);
+}
+
+.main_container {
+    height: 100%;
+    width: 50%;
+    padding: 15px;
+}
+
+.main_container .charts_container {
+    height: 55%;
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main_container .charts_container .ticker_infos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.main_container .charts_container .ticker_infos img {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+    background-color: white;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.main_container .data_container {
+    height: 45%;
+    padding: 10px;
+}

@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --main-color: rgb(29, 136, 254);
+    --main-bg-color: background-color: rgb(14, 20, 37);
+}
+
+.numbers_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.white {
+    color: white;
+}
+
+.numbers_container .stats_container {
+    background-color: #000;
+    width: 150px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.numbers_container .stats_container p {
+    display: inline-block;
+    padding: 0px 3px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.numbers_container .red {
+    background-color: red;
+}
+
+.numbers_container .green{
+    background-color: green;
+}
+
+.numbers_container .orange {
+    background-color: orange;
+}
